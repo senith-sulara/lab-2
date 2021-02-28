@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LAB 2</title>
+</head>
+<body>
+<h1>IT19143828</h1>
+
+<script type="text/javascript">
+    function getValue(callback){
+        let value = 0;
+        setTimeout(function (){
+            value = 10;
+            callback(value);
+        },1000);
+    }
+
+    getValue(function (value){
+        console.log(value);
+    });
+
+</script>
+</body>
+</html>
